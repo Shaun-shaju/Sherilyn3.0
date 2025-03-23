@@ -57,4 +57,3 @@ Feel free to fork this project, open issues, and submit pull requests! 🚀
 
 ---
 *Designed with ❤️ by S. Shaun Benedict*
-```
