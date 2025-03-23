@@ -9,13 +9,11 @@ Sherilyn AI is an advanced personal AI assistant designed by **S. Shaun Benedict
 ✅ **Firestore Integration** – Securely saves and retrieves chat history.  
 ✅ **Streamlit UI** – Interactive and easy-to-use web interface.  
 ✅ **Authentication System** – Secure login and sign-up functionality.  
-✅ **Offline Mode** – Packaged with PyInstaller for standalone execution.  
 
 ## **🛠️ Tech Stack**  
 - **Python** – Backend logic  
 - **Streamlit** – UI Framework  
 - **Google Firestore** – Database for storing chat history  
-- **PyInstaller** – Converts the app into a standalone `.exe`  
 - **Google AI Studio** – AI-powered responses  
 
 ## **📦 Installation**  
