@@ -16,10 +16,10 @@ I have experience in:
 - **Music Production & Sound Engineering** 🎵  
 
 🔗 **Connect with me:**  
-    - Email: s.shaunbenedict@gmail.com  
-    - Instagram: @s.shaunbenedict
-    - LinkedIn: https://www.linkedin.com/in/shaunbenedict/
-    - GitHub: Shaun-shaju
+- Email: s.shaunbenedict@gmail.com  
+- Instagram: @s.shaunbenedict
+- LinkedIn: https://www.linkedin.com/in/shaunbenedict/
+- GitHub: Shaun-shaju
 """)
 
 # Footer

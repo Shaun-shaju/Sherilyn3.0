@@ -93,3 +93,5 @@ def login():
         else:
             st.error("User not found. Please sign up first.")
     return None
+
+print(login)

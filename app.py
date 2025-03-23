@@ -1,8 +1,8 @@
 import streamlit as st
-import pages.auth as auth
 import time
 import sys
-import os
+sys.path.append("pages")  # Add 'pages' to the module search path
+from pages.auth import login, signup
 
 st.title("Sherilyn AI")
 # st.markdown(
@@ -60,7 +60,7 @@ if "page" not in st.session_state:
 
 elif st.session_state.page == "login":
     st.subheader("🔑 Login to Your Account")
-    data = auth.login()
+    data = login()
     if data:
         st.session_state["authenticated"] = True
         st.session_state["user_data"] = data
@@ -68,7 +68,7 @@ elif st.session_state.page == "login":
         st.rerun()
 elif st.session_state.page == "signup":
     st.subheader("📝 Create a New Account")
-    data = auth.signup()
+    data = signup()
     if data:
         st.session_state["authenticated"] = True
         st.session_state.page = "dashboard"  # Redirect after signup
