@@ -5,9 +5,11 @@ import google.generativeai as genai
 import streamlit as st
 from server.firestore_dump import chat_load
 
+api_path = st.secrets["genai"]['api_key']
+
 now = datetime.now()
 dt_string = str(now.strftime("%d_%m_%Y"))
-genai.configure(api_key="AIzaSyB2NHhHZknlrAsE59il8HsG7gxZyQrprsw")  
+genai.configure(api_key=api_path)  
 generation_config = {"temperature": 2}
 
 

@@ -1,13 +1,13 @@
 import streamlit as st
 from google.cloud import firestore
-import os
+import json
 import bcrypt
-import base64  # New: To properly encode and decode passwords
+import base64  # To properly encode and decode passwords
 
-# Firestore Initialization
+# Firestore Initialization using Streamlit Secrets
 def initialize_firestore():
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ("logs/firebase_auth.json")
-    db = firestore.Client()
+    firestore_secrets = st.secrets["firestore"]  # Load credentials from Streamlit secrets
+    db = firestore.Client.from_service_account_info(dict(firestore_secrets))  # Use the secrets
     return db
 
 db = initialize_firestore()
@@ -93,5 +93,3 @@ def login():
         else:
             st.error("User not found. Please sign up first.")
     return None
-
-print(login)

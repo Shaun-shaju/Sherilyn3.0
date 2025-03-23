@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # OpenWeatherMap API Key (Replace with your own API Key)
-API_KEY = "47c54315d078ae4145c53ece5d0a110f"
+API_KEY = st.secrets['weather']['apikey']
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 st.subheader("🌦️ Weather Forecast App")

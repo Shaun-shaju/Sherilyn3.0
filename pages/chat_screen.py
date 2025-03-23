@@ -8,8 +8,8 @@ from google.cloud import firestore
 
 # Firestore Initialization
 def initialize_firestore():
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ("logs/firebase_auth.json")
-    db = firestore.Client()
+    firestore_secrets = st.secrets["firestore"]  # Load credentials from Streamlit secrets
+    db = firestore.Client.from_service_account_info(dict(firestore_secrets))  # Use the secrets
     return db
 
 db = initialize_firestore()
