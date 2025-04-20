@@ -52,6 +52,13 @@ pyinstaller --noconfirm --onefile --windowed --hidden-import=all_modules main.py
 - 🌍 Multi-language support  
 - 📚 AI-powered content summarization  
 
+## 🚀 Try Sherilyn AI  
+Click below to experience the AI assistant live:  
+
+[![Run on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sherilyn3.streamlit.app/)
+
+
+
 ## **🤝 Contributing**  
 Feel free to fork this project, open issues, and submit pull requests! 🚀  
 
