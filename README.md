@@ -55,7 +55,7 @@ pyinstaller --noconfirm --onefile --windowed --hidden-import=all_modules main.py
 ## 🚀 Try Sherilyn AI  
 Click below to experience the AI assistant live:  
 
-[![Run on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sherilyn30-x86jrkbobys3xndp77ga5n.streamlit.app/)
+[![Run on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sherilyn3.streamlit.app/)
 
 
 
